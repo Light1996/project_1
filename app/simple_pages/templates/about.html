@@ -1,4 +1,74 @@
 {% extends "base.html" %}
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  	{% block head %}
+    <title>About</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}"/>
+  {% endblock %}
+</head>
+<body>
 {% block content %}
-    About Page
-{% endblock %}
+    <br/>
+    <br/>
+    <div class="column_about">
+        <h2 class="about_text">HOW THE SYSTEM WORKS</h2>
+        <p class="about_p">Many features such as Tutor Finding, question bank, test/exam,video
+            education, solution access within one platform</p>
+    </div>
+
+    <div class="row_ab">
+        <div class="col_ab">
+            <div class="img_ab">
+                <img src="../Images/tut.png">
+                <p class="p_ab">Tutor Finding</p>
+            </div>
+        </div>
+        <div class="col_ab">
+            <div class="img_ab">
+                <img src="../Images/vid.png">
+                <p class="p_ab">Video Education</p>
+            </div>
+        </div>
+        <div class="col_ab">
+            <div class="img_ab">
+                <img src="../Images/doc.jpg">
+                <p class="p_ab">Solution Access</p>
+            </div>
+        </div>
+        <div class="col_ab">
+            <div class="img_ab">
+                <img src="../Images/ques.png">
+                <p class="p_ab">Question Bank</p>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <footer class="back" >
+        <div class="row_left"><br/>
+            <div class="col_home">
+				<h2 style="color: white">Who are we?</h2>
+				<p style="color: grey">We provides an online platform for both teacher and students to take and create
+				quizzes for distant learning and testing.</p>
+			  </div>
+            <div class="col_home">
+                <h2 style="color: white">Phone and Email</h2>
+                <p style="color: grey">
+                +1-202-555-0195<br>
+                +1-202-555-0177<br>
+                +1-202-555-0131<br>
+                onlinetutoringsystem@gmail.com</p>
+            </div>
+            <div class="col_home">
+                <h2 style="color: white">Address</h2>
+                <p style="color: grey">455 Golden Gate Ave #11000, San Francisco, CA 94102, United States </p>
+            </div>
+        </div>
+        <br/><br/>
+    </footer>
+  {% endblock %}
+</body>
+</html>
